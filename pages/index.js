@@ -107,7 +107,7 @@ export default function Home() {
                         <Hidden smDown>
                             <Grid item xs={12} sm={12} md={4} lg={4} xl={4} >
                                 <Box display="flex" alignItems="center" justifyContent="center" style={{ position: 'absolute', bottom:'0', right: '0' }}>
-                                    <Image src="/remote.png" width={1300} height={1000}  />
+                                    <Image src="/remote.png" width={1300} height={500}  />
                                 </Box>
                             </Grid>
                         </Hidden>
