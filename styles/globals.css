@@ -14,3 +14,17 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.div-wrapper {
+  position: relative;
+  height: 95vh;
+  width: 100%;
+}
+
+.div-wrapper img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 70vh;
+  width: 50vw;
+}
