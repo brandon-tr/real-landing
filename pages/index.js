@@ -80,7 +80,7 @@ export default function Home() {
                 </AppBar>
                 <Container fixed>
                     <Grid container style={{ height: '90vh' }} spacing={0}>
-                        <Grid item xs={12} sm={12} md={8} lg={8} xl={8}>
+                        <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
                             <Box display="flex" alignItems="center" justifyContent="center" style={{ height: '100%', width: '100%' }}>
                                 <Grid container>
                                     <Grid item xs={12} lg={12} md={12} sm={12} xl={12}>
@@ -105,9 +105,9 @@ export default function Home() {
                             </Box>
                         </Grid>
                         <Hidden smDown>
-                            <Grid item xs={12} sm={12} md={4} lg={4} xl={4} >
-                                <Box display="flex" alignItems="center" justifyContent="center" style={{ position: 'absolute', bottom:'0', right: '0' }}>
-                                    <Image src="/remote.png" width={1300} height={500}  />
+                            <Grid item xs={12} sm={12} md={8} lg={8} xl={8} >
+                                <Box display="flex" alignItems="flex-end" justifyContent="center" style={{ height: '95vh' }}>
+                                    <Image src="/remote.png" width={910} height={930} objectFit="fill"  />
                                 </Box>
                             </Grid>
                         </Hidden>
