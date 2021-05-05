@@ -13,6 +13,7 @@ import {
 import Image from "next/image";
 import MenuIcon from "@material-ui/icons/Menu";
 import Link from "next/link";
+import React from "react";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -166,9 +167,9 @@ export default function pageTwo() {
                                                     lineHeight: '29px',
                                                     letterSpacing: '0em',
                                                     textAlign: 'center',
-
+                                                    textTransform: 'lowercase'
                                                 }}>
-                                                    Take a tour
+                                                    <span style={{ textTransform: 'uppercase' }}>T</span>ake a tour
                                                 </Typography>
                                             </Button>
                                         </Box>
