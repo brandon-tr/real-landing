@@ -57,7 +57,7 @@ export default function pageTwo() {
         <div className={classes.background}>
             <AppBar position="static" style={{background: 'transparent', boxShadow: 'none'}}>
                 <Toolbar>
-                    <Image src={"/Logo.png"} width={50} height={50}/>
+                    <Image src={"/logodark.png"} width={50} height={50} color="primary"/>
                     <div style={{flexGrow: 1}}/>
                     <Hidden only={['md', 'lg', 'xl']}>
                         <IconButton edge="start" color="primary" aria-label="menu">

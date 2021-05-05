@@ -26,6 +26,8 @@ const useStyles = makeStyles((theme) => ({
         textAlign: 'center',
     },
     subText: {
+        paddingTop: '1rem',
+        paddingBottom: '5rem',
         fontSize: '18px',
         color: theme.palette.secondary.second,
         fontStyle: 'normal',
@@ -67,7 +69,7 @@ export default function pageOne() {
                             </Link>
                             <Link href="/">
                                 <a className={classes.root} style={{padding: '0 1rem'}}> <Image src={"/dashboard.png"}
-                                                                                                width={25} height={25}/>
+                                                                                                width={25} height={25} alt="user icon"/>
                                 </a>
                             </Link>
                         </Box>
@@ -77,22 +79,34 @@ export default function pageOne() {
             <section>
                 <Container fixed>
                     <Grid container style={{height: '80vh'}}>
-                        <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
+                        <Grid item xs={12} sm={12} md={8} lg={8} xl={8}>
                             <Box display="flex" alignItems="center" justifyContent="center" flexDirection="column"
                                  style={{height: '100%'}}>
-                                <Image src="/waypoint-frontPage.png" width={320} height={80}/>
+                                <Image src="/waypoint-frontPage.png" width={320} height={80} alt="picture that says waypoint"/>
                                 <Typography className={classes.subText}>Reimagining the way we view
                                     spaces
                                 </Typography>
                                 <Button variant="contained"
                                         style={{
-                                            height: '59.66851043701172px',
+                                            height: '59px',
                                             width: '300px',
                                             borderRadius: '40px',
                                             background: 'linear-gradient(180deg, #8ED8EF 0%, #BAE0C2 100%)'
                                         }}
                                 >
-                                    Take a tour
+                                    <Typography color="primary" style={{
+
+                                        fontFamily: 'Work Sans',
+                                        fontSize: '18px',
+                                        fontStyle: 'normal',
+                                        fontWeight: '700',
+                                        lineHeight: '29px',
+                                        letterSpacing: '0em',
+                                        textAlign: 'center',
+
+                                    }}>
+                                        Take a tour
+                                    </Typography>
                                 </Button>
                             </Box>
                         </Grid>
@@ -100,7 +114,7 @@ export default function pageOne() {
                 </Container>
             </section>
             <div style={{ position: 'absolute', bottom: 0, right: 0, height: '70vh', width: '67vw'}}>
-                <Image src={"/remote.png"} layout="fill" />
+                <Image src={"/remote.png"} layout="fill" alt="special 3d camera" />
             </div>
         </div>
     )
