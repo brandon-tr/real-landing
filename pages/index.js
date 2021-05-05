@@ -38,7 +38,9 @@ export default function Home() {
                 <meta property="og:type"               content="website" />
                 <meta property="og:title"              content="Waypoint" />
                 <meta property="og:description"        content="Waypoint is a 3D virtual touring company based on Guam." />
-                <meta property="og:image"              content="https://waypoint-bucket.s3-us-west-1.amazonaws.com/icons/Logo.png" />
+                <meta property="og:image"              content="https://s3.console.aws.amazon.com/s3/object/waypoint-bucket?region=us-west-1&prefix=icons/waypoint-frontPage.png" />
+                <meta property="og:image:width" content="1200" />
+                <meta property="og:image:height" content="630" />
             </Head>
             <main>
                 <section>
