@@ -98,7 +98,8 @@ export default function pageOne() {
                                             width: '300px',
                                             borderRadius: '40px',
                                             background: 'linear-gradient(180deg, #8ED8EF 0%, #BAE0C2 100%)',
-                                            alignSelf: "flex-start"
+                                            alignSelf: "flex-start",
+                                            zIndex: 1
                                         }}
                                 >
                                     <Typography color="primary" style={{
@@ -110,9 +111,10 @@ export default function pageOne() {
                                         lineHeight: '29px',
                                         letterSpacing: '0em',
                                         textAlign: 'center',
+                                        textTransform: 'lowercase',
 
                                     }}>
-                                        Take a tour
+                                        <span style={{ textTransform: 'uppercase' }}>T</span>ake a tour
                                     </Typography>
                                 </Button>
                             </Box>
@@ -126,6 +128,7 @@ export default function pageOne() {
                 right: 0,
                 height: '90vh',
                 width: '98vw',
+                zIndex: 0,
                 WebkitTransform: 'translate(15%, 0)',
                 transform: 'translate(15%, 0)',
             }}>

@@ -57,7 +57,9 @@ export default function pageTwo() {
         <div className={classes.background}>
             <AppBar position="static" style={{background: 'transparent', boxShadow: 'none'}}>
                 <Toolbar>
-                    <Image src={"/logodark.png"} width={50} height={50} color="primary"/>
+                    <div style={{padding: '2rem 5rem 0 5rem'}}>
+                        <Image src={"/logodark.png"} width={50} height={50} color="primary"/>
+                    </div>
                     <div style={{flexGrow: 1}}/>
                     <Hidden only={['md', 'lg', 'xl']}>
                         <IconButton edge="start" color="primary" aria-label="menu">
@@ -67,22 +69,22 @@ export default function pageTwo() {
                     <Hidden smDown>
                         <Box display="flex">
                             <Link href="/">
-                                <a className={classes.root} style={{padding: '0 1rem'}}>Home</a>
+                                <a className={classes.root} style={{padding: '2rem 5rem 0 1rem'}}>Home</a>
                             </Link>
                             <Link href="/">
-                                <a className={classes.root} style={{padding: '0 1rem'}}>Services</a>
+                                <a className={classes.root} style={{padding: '2rem 5rem 0 1rem'}}>Services</a>
                             </Link>
                             <Link href="/">
-                                <a className={classes.root} style={{padding: '0 1rem'}}>How it Works</a>
+                                <a className={classes.root} style={{padding: '2rem 5rem 0 1rem'}}>How it Works</a>
                             </Link>
                             <Link href="/">
-                                <a className={classes.root} style={{padding: '0 1rem'}}>Gallery</a>
+                                <a className={classes.root} style={{padding: '2rem 5rem 0 1rem'}}>Gallery</a>
                             </Link>
                             <Link href="/">
-                                <a className={classes.root} style={{padding: '0 1rem'}}>Contact Us</a>
+                                <a className={classes.root} style={{padding: '2rem 5rem 0 1rem'}}>Contact Us</a>
                             </Link>
                             <Link href="/">
-                                <a className={classes.root} style={{padding: '0 1rem'}}> <Image src={"/dashboard.png"}
+                                <a className={classes.root} style={{padding: '2rem 5rem 0 1rem'}}> <Image src={"/dashboard.png"}
                                                                                                 width={25} height={25}/>
                                 </a>
                             </Link>
@@ -126,7 +128,7 @@ export default function pageTwo() {
                                     }} className={classes.aboutUsDescription}>Waypoint is a 3D virtual touring company based on Guam.</Typography>
                                     <Grid container spacing={3} justify="center" alignItems="center">
                                         <Grid item xs={2} sm={2} align="center">
-                                            <div style={{ border: '3px solid #8D78B7' }} />
+                                            <div style={{ border: '3px solid #8D78B7', marginTop: '-1.4rem' }} />
                                         </Grid>
                                         <Grid item xs={10} sm={10}>
                                             <Typography style={{
