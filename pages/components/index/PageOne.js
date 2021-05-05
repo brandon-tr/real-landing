@@ -28,13 +28,17 @@ const useStyles = makeStyles((theme) => ({
     subText: {
         paddingTop: '1rem',
         paddingBottom: '5rem',
-        fontSize: '18px',
+        fontSize: '1.5rem',
         color: theme.palette.secondary.second,
         fontStyle: 'normal',
         fontWeight: '400',
         lineHeight: '28.8px',
         letterSpacing: '0em',
-    }
+        textAlign: "left"
+    },
+    white: {
+        color: theme.palette.secondary.main
+    },
 }));
 
 export default function pageOne() {
@@ -43,7 +47,9 @@ export default function pageOne() {
         <div style={{ position: 'relative', height: '100vh', width: '100vw' }}>
             <AppBar position="static" style={{background: 'transparent', boxShadow: 'none'}}>
                 <Toolbar>
-                    <Image src={"/Logo.png"} width={50} height={50}/>
+                    <div style={{padding: '2rem 5rem 0 5rem'}}>
+                        <Image src={"/Logo.png"} width={50} height={50} />
+                    </div>
                     <div style={{flexGrow: 1}}/>
                     <Hidden only={['md', 'lg', 'xl']}>
                         <IconButton edge="start" color="inherit" aria-label="menu">
@@ -53,22 +59,22 @@ export default function pageOne() {
                     <Hidden smDown>
                         <Box display="flex">
                             <Link href="/">
-                                <a className={classes.root} style={{padding: '0 1rem'}}>Home</a>
+                                <a className={classes.root} style={{padding: '2rem 5rem 0 1rem'}}>Home</a>
                             </Link>
                             <Link href="/">
-                                <a className={classes.root} style={{padding: '0 1rem'}}>Services</a>
+                                <a className={classes.root} style={{padding: '2rem 5rem 0 1rem'}}>Services</a>
                             </Link>
                             <Link href="/">
-                                <a className={classes.root} style={{padding: '0 1rem'}}>How it Works</a>
+                                <a className={classes.root} style={{padding: '2rem 5rem 0 1rem'}}>How it Works</a>
                             </Link>
                             <Link href="/">
-                                <a className={classes.root} style={{padding: '0 1rem'}}>Gallery</a>
+                                <a className={classes.root} style={{padding: '2rem 5rem 0 1rem'}}>Gallery</a>
                             </Link>
                             <Link href="/">
-                                <a className={classes.root} style={{padding: '0 1rem'}}>Contact Us</a>
+                                <a className={classes.root} style={{padding: '2rem 5rem 0 1rem'}}>Contact Us</a>
                             </Link>
                             <Link href="/">
-                                <a className={classes.root} style={{padding: '0 1rem'}}> <Image src={"/dashboard.png"}
+                                <a className={classes.root} style={{padding: '2rem 5rem 0 1rem'}}> <Image src={"/dashboard.png"}
                                                                                                 width={25} height={25} alt="user icon"/>
                                 </a>
                             </Link>
@@ -82,8 +88,8 @@ export default function pageOne() {
                         <Grid item xs={12} sm={12} md={8} lg={8} xl={8}>
                             <Box display="flex" alignItems="center" justifyContent="center" flexDirection="column"
                                  style={{height: '100%'}}>
-                                <Image src="/waypoint-frontPage.png" width={320} height={80} alt="picture that says waypoint"/>
-                                <Typography className={classes.subText}>Reimagining the way we view
+                                <Typography style={{ fontFamily: 'Blatant', fontSize: '7rem', fontWeight: 'bold', alignSelf: "flex-start" }} className={classes.white}>Waypoint</Typography>
+                                <Typography style={{ alignSelf: "flex-start" }} className={classes.subText}>Reimagining the way we view
                                     spaces
                                 </Typography>
                                 <Button variant="contained"
@@ -91,7 +97,8 @@ export default function pageOne() {
                                             height: '59px',
                                             width: '300px',
                                             borderRadius: '40px',
-                                            background: 'linear-gradient(180deg, #8ED8EF 0%, #BAE0C2 100%)'
+                                            background: 'linear-gradient(180deg, #8ED8EF 0%, #BAE0C2 100%)',
+                                            alignSelf: "flex-start"
                                         }}
                                 >
                                     <Typography color="primary" style={{
@@ -113,7 +120,15 @@ export default function pageOne() {
                     </Grid>
                 </Container>
             </section>
-            <div style={{ position: 'absolute', bottom: 0, right: 0, height: '70vh', width: '67vw'}}>
+            <div style={{
+                position: 'absolute',
+                bottom: 0,
+                right: 0,
+                height: '90vh',
+                width: '98vw',
+                WebkitTransform: 'translate(15%, 0)',
+                transform: 'translate(15%, 0)',
+            }}>
                 <Image src={"/remote.png"} layout="fill" alt="special 3d camera" />
             </div>
         </div>
