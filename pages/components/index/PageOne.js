@@ -13,6 +13,7 @@ import {
 import Image from "next/image";
 import MenuIcon from "@material-ui/icons/Menu";
 import Link from "next/link";
+import React from "react";
 
 const useStyles = makeStyles((theme) => ({
     root: {

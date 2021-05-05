@@ -28,3 +28,11 @@ a {
   height: 70vh;
   width: 50vw;
 }
+.outer {
+  position: fixed;
+  top: 60%;
+  left: 5%;
+  -webkit-transform: translate(-20%, -20%);
+  transform: translate(-20%, -20%);
+}
+
