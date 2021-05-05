@@ -33,7 +33,7 @@ export default function Home() {
             <Head>
                 <title>Waypoint</title>
                 <meta name="description" content="Waypoint is a 3D virtual touring company based on Guam." />
-                <link rel="icon" href="/logo.png" />
+                <link rel="icon" href="/Logo.png" />
                 <meta property="og:url"                content="https://waypointgu.com/" />
                 <meta property="og:type"               content="website" />
                 <meta property="og:title"              content="Waypoint" />
