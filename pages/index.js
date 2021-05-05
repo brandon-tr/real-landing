@@ -58,14 +58,15 @@ export default function Home() {
                                 className={classes.even}
                                 style={{
                                     fontFamily: 'Work Sans',
-                                    fontSize: '1.5rem',
+                                    fontSize: '1.2rem',
                                     fontStyle: 'normal',
                                     fontWeight: 600,
                                     lineHeight: '22px',
                                     letterSpacing: '0em',
                                     transform: 'rotate(-90deg)',
                                     marginBottom: '2rem',
-                                    paddingBottom: '7.4rem',
+                                    paddingBottom: '7.0rem',
+                                    marginLeft: '0.76rem'
                                 }}
                             >
                                 scroll for more
@@ -75,14 +76,15 @@ export default function Home() {
                                 className={classes.odd}
                                 style={{
                                     fontFamily: 'Work Sans',
-                                    fontSize: '1.5rem',
+                                    fontSize: '1.2rem',
                                     fontStyle: 'normal',
                                     fontWeight: 600,
                                     lineHeight: '22px',
                                     letterSpacing: '0em',
                                     transform: 'rotate(-90deg)',
                                     marginBottom: '2rem',
-                                    paddingBottom: '7.4rem',
+                                    paddingBottom: '7.0rem',
+                                    marginLeft: '0.76rem'
                                 }}
                             >
                                 scroll for more
