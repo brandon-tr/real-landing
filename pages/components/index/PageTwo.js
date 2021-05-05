@@ -85,7 +85,7 @@ export default function pageTwo() {
                                 <a className={classes.root} style={{padding: '2rem 5rem 0 1rem'}}>Contact Us</a>
                             </Link>
                             <Link href="/">
-                                <a className={classes.root} style={{padding: '2rem 5rem 0 1rem'}}> <Image src={"/dashboard.png"}
+                                <a className={classes.root} style={{padding: '2rem 5rem 0 1rem'}}> <Image src={"/darkdashboard.png"}
                                                                                                 width={25} height={25}/>
                                 </a>
                             </Link>

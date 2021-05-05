@@ -58,15 +58,15 @@ export default function Home() {
                                 className={classes.even}
                                 style={{
                                     fontFamily: 'Work Sans',
-                                    fontSize: '1.2rem',
+                                    fontSize: '0.9rem',
                                     fontStyle: 'normal',
                                     fontWeight: 600,
                                     lineHeight: '22px',
                                     letterSpacing: '0em',
                                     transform: 'rotate(-90deg)',
                                     marginBottom: '2rem',
-                                    paddingBottom: '7.0rem',
-                                    marginLeft: '0.76rem'
+                                    paddingBottom: '5.0rem',
+                                    marginLeft: '0.8rem'
                                 }}
                             >
                                 scroll for more
@@ -76,15 +76,15 @@ export default function Home() {
                                 className={classes.odd}
                                 style={{
                                     fontFamily: 'Work Sans',
-                                    fontSize: '1.2rem',
+                                    fontSize: '0.9rem',
                                     fontStyle: 'normal',
                                     fontWeight: 600,
                                     lineHeight: '22px',
                                     letterSpacing: '0em',
                                     transform: 'rotate(-90deg)',
                                     marginBottom: '2rem',
-                                    paddingBottom: '7.0rem',
-                                    marginLeft: '0.76rem'
+                                    paddingBottom: '5.0rem',
+                                    marginLeft: '0.8rem'
                                 }}
                             >
                                 scroll for more
