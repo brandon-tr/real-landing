@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
 export default function pageOne() {
     const classes = useStyles();
     return (
-        <>
+        <div style={{ position: 'relative', height: '100vh', width: '100vw' }}>
             <AppBar position="static" style={{background: 'transparent', boxShadow: 'none'}}>
                 <Toolbar>
                     <Image src={"/Logo.png"} width={50} height={50}/>
@@ -75,74 +75,32 @@ export default function pageOne() {
             </AppBar>
             <section>
                 <Container fixed>
-                    <Grid container style={{height: '90vh'}} spacing={0}>
-                        <Hidden smDown>
-                            <Grid item xs={12} sm={12} md={4} lg={4} xl={4} style={{paddingLeft: '5rem'}}>
-                                <Box display="flex" alignItems="center" justifyContent="center"
-                                     style={{height: '100%', width: '100%'}}>
-                                    <Grid container>
-                                        <Grid item xs={12} lg={12} md={12} sm={12} xl={12}>
-                                            <Image src="/waypoint-frontPage.png" width={320} height={80}/>
-                                        </Grid>
-                                        <Grid item xs={12} lg={12} md={12} sm={12} xl={12}>
-                                            <Typography className={classes.subText}>Reimagining the way we view
-                                                spaces</Typography>
-                                        </Grid>
-                                        <Grid item xs={12} lg={12} md={12} sm={12} xl={12} style={{paddingTop: '8rem'}}>
-                                            <Button variant="contained"
-                                                    style={{
-                                                        height: '59.66851043701172px',
-                                                        width: '300px',
-                                                        borderRadius: '40px',
-                                                        background: 'linear-gradient(180deg, #8ED8EF 0%, #BAE0C2 100%)'
-                                                    }}
-                                            >
-                                                Take a tour
-                                            </Button>
-                                        </Grid>
-                                    </Grid>
-                                </Box>
-                            </Grid>
-                        </Hidden>
-                        <Hidden only={['md', 'lg', 'xl']}>
-                            <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
-                                <Box display="flex" alignItems="center" justifyContent="center"
-                                     style={{height: '100%', width: '100%'}}>
-                                    <Grid container>
-                                        <Grid item xs={12} lg={12} md={12} sm={12} xl={12}>
-                                            <Image src="/waypoint-frontPage.png" width={320} height={80}/>
-                                        </Grid>
-                                        <Grid item xs={12} lg={12} md={12} sm={12} xl={12}>
-                                            <Typography className={classes.subText}>Reimagining the way we view
-                                                spaces</Typography>
-                                        </Grid>
-                                        <Grid item xs={12} lg={12} md={12} sm={12} xl={12} style={{paddingTop: '8rem'}}>
-                                            <Button variant="contained"
-                                                    style={{
-                                                        height: '59.66851043701172px',
-                                                        width: '300px',
-                                                        borderRadius: '40px',
-                                                        background: 'linear-gradient(180deg, #8ED8EF 0%, #BAE0C2 100%)'
-                                                    }}
-                                            >
-                                                Take a tour
-                                            </Button>
-                                        </Grid>
-                                    </Grid>
-                                </Box>
-                            </Grid>
-                        </Hidden>
-
-                        <Hidden smDown>
-                            <Grid item xs={12} sm={12} md={8} lg={8} xl={8}>
-                                <div className="div-wrapper">
-                                    <img src="/remote.png"/>
-                                </div>
-                            </Grid>
-                        </Hidden>
+                    <Grid container style={{height: '80vh'}}>
+                        <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
+                            <Box display="flex" alignItems="center" justifyContent="center" flexDirection="column"
+                                 style={{height: '100%'}}>
+                                <Image src="/waypoint-frontPage.png" width={320} height={80}/>
+                                <Typography className={classes.subText}>Reimagining the way we view
+                                    spaces
+                                </Typography>
+                                <Button variant="contained"
+                                        style={{
+                                            height: '59.66851043701172px',
+                                            width: '300px',
+                                            borderRadius: '40px',
+                                            background: 'linear-gradient(180deg, #8ED8EF 0%, #BAE0C2 100%)'
+                                        }}
+                                >
+                                    Take a tour
+                                </Button>
+                            </Box>
+                        </Grid>
                     </Grid>
                 </Container>
             </section>
-        </>
+            <div style={{ position: 'absolute', bottom: 0, right: 0, height: '70vh', width: '67vw'}}>
+                <Image src={"/remote.png"} layout="fill" />
+            </div>
+        </div>
     )
 }

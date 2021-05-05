@@ -93,11 +93,13 @@ export default function pageTwo() {
             <section>
                 <Container style={{ height: '98vh' }}>
                     <Box display="flex">
-                        <Grid container justify="center" alignItems="center" style={{ height: '98vh' }}>
-                            <Grid item xs={12} sm={12} md={8} lg={8} xl={8} align="center">
-                                <Image src="/3dscan.png" width={771} height={631} alt="3dscan" />
-                            </Grid>
-                            <Grid item xs={12} sm={12} md={4} lg={4} xl={4} style={{ height: '50vh', padding: '0 1rem' }}>
+                        <Grid container justify="center" alignItems="center" style={{ height: '98vh' }} spacing={10}>
+                            <Hidden smDown>
+                                <Grid item xs={12} sm={12} md={8} lg={8} xl={8} align="center" style={{ paddingLeft: '1.2rem' }}>
+                                    <Image src="/3dscan.png" width={771} height={631} alt="3dscan" />
+                                </Grid>
+                            </Hidden>
+                            <Grid item xs={12} sm={12} md={4} lg={4} xl={4} style={{ height: '50vh', paddingRight: '1.2rem' }}>
                                 <Box alignItems="flex-start">
                                     <Typography style={{
 
@@ -107,7 +109,7 @@ export default function pageTwo() {
                                         fontWeight: '400',
                                         lineHeight: '77px',
                                         letterSpacing: '0em',
-                                        paddingBottom: '20px',
+                                        paddingBottom: '2rem',
 
                                     }} className={classes.aboutUsColor}>About us</Typography>
                                     <Typography style={{
@@ -119,6 +121,7 @@ export default function pageTwo() {
                                         lineHeight: '29px',
                                         letterSpacing: '0em',
                                         textAlign: 'left',
+                                        paddingBottom: '2rem',
 
                                     }} className={classes.aboutUsDescription}>Waypoint is a 3D virtual touring company based on Guam.</Typography>
                                     <Grid container spacing={3} justify="center" alignItems="center">
@@ -135,11 +138,12 @@ export default function pageTwo() {
                                                 fontWeight: 400,
                                                 lineHeight: '22px',
                                                 letterSpacing: '0em',
-                                                textAlign: 'left'
+                                                textAlign: 'left',
 
                                             }} className={classes.aboutUsSubtext}>Showcase your business or property by immersing your customers in our virtual tours!</Typography>
                                         </Grid>
                                     </Grid>
+                                    <div style={{ paddingBottom: '5rem' }} />
                                     <Hidden smDown>
                                         <Box display="flex" alignContent="flex-end" style={{ height: '30vh' }}>
                                             <Button variant="contained"
