@@ -46,7 +46,9 @@ const useStyles = makeStyles((theme) => ({
     aboutUsSubtext: {
         color: theme.palette.primary.dark
     },
-
+    secondarySecond: {
+        color: theme.palette.secondary.second
+    },
 }));
 
 export default function pageTwo() {
@@ -138,6 +140,33 @@ export default function pageTwo() {
                                             }} className={classes.aboutUsSubtext}>Showcase your business or property by immersing your customers in our virtual tours!</Typography>
                                         </Grid>
                                     </Grid>
+                                    <Hidden smDown>
+                                        <Box display="flex" alignContent="flex-end" style={{ height: '30vh' }}>
+                                            <Button variant="contained"
+                                                    style={{
+                                                        height: '59px',
+                                                        width: '300px',
+                                                        borderRadius: '40px',
+                                                        background: 'linear-gradient(180deg, #6D58A5 0%, #8D78B7 100%)'
+                                                    }}
+                                                    className={classes.secondarySecond}
+                                            >
+                                                <Typography style={{
+
+                                                    fontFamily: 'Work Sans',
+                                                    fontSize: '18px',
+                                                    fontStyle: 'normal',
+                                                    fontWeight: '700',
+                                                    lineHeight: '29px',
+                                                    letterSpacing: '0em',
+                                                    textAlign: 'center',
+
+                                                }}>
+                                                    Take a tour
+                                                </Typography>
+                                            </Button>
+                                        </Box>
+                                    </Hidden>
                                 </Box>
                             </Grid>
                         </Grid>
