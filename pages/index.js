@@ -4,6 +4,7 @@ import ReactPageScroller from 'react-page-scroller';
 import PageOne from './components/index/PageOne';
 import PageTwo from './components/index/PageTwo';
 import PageThree from './components/index/PageThree';
+import PageFour from './components/index/PageFour';
 import Image from 'next/image';
 import {makeStyles, Typography} from "@material-ui/core";
 
@@ -53,6 +54,7 @@ export default function Home() {
                         <PageOne />
                         <PageTwo />
                         <PageThree />
+                        <PageFour />
                     </ReactPageScroller>
                     <div className="outer">
                         {number % 2 === 0 ?
