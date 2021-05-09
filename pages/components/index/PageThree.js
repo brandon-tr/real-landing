@@ -136,7 +136,7 @@ export default function pageThree() {
                     </Box>
                     <Grid container justify="center" alignItems="center" spacing={3} style={{ paddingLeft: '4rem' }}>
                         <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
-                            <div style={{ paddingLeft: '8rem' }}>
+                            <div style={{ paddingLeft: '8.3rem' }}>
                                 <Image src={"/3dtour.png"} width={100} height={100} />
                             </div>
                             <Typography className={classes.tours} style={{
