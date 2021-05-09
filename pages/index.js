@@ -26,7 +26,9 @@ export default function Home() {
     const handlePageChange = number => {
         setNumber(number);
     };
-
+    const setPageFour = () => {
+        setNumber(3);
+    };
     const handleBeforePageChange = number => {
         console.log(number);
     };
@@ -51,8 +53,8 @@ export default function Home() {
                         onBeforePageScroll={handleBeforePageChange}
                         customPageNumber={number}
                     >
-                        <PageOne />
-                        <PageTwo />
+                        <PageOne setPageFour={setPageFour} />
+                        <PageTwo setPageFour={setPageFour} />
                         <PageThree />
                         <PageFour />
                     </ReactPageScroller>

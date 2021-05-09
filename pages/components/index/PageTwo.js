@@ -52,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export default function pageTwo() {
+export default function pageTwo(props) {
     const classes = useStyles();
     return (
         <div className={classes.background}>
@@ -149,7 +149,9 @@ export default function pageTwo() {
                                     <div style={{ paddingBottom: '5rem' }} />
                                     <Hidden smDown>
                                         <Box display="flex" alignContent="flex-end" style={{ height: '30vh' }}>
-                                            <Button variant="contained"
+                                            <Button
+                                                onClick={props.setPageFour}
+                                                variant="contained"
                                                     style={{
                                                         height: '59px',
                                                         width: '300px',

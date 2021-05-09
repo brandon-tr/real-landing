@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export default function pageOne() {
+export default function pageOne(props) {
     const classes = useStyles();
     return (
         <div style={{ position: 'relative', height: '100vh', width: '100vw' }}>
@@ -92,7 +92,9 @@ export default function pageOne() {
                                 <Typography style={{ alignSelf: "flex-start" }} className={classes.subText}>Reimagining the way we view
                                     spaces
                                 </Typography>
-                                <Button variant="contained"
+                                <Button
+                                    onClick={props.setPageFour}
+                                    variant="contained"
                                         style={{
                                             height: '59px',
                                             width: '300px',
