@@ -113,7 +113,7 @@ export default function pageThree() {
             </AppBar>
             <section>
                 <Container fixed>
-                    <Box display="flex" alignItems="center" style={{ height: '38vh' }}>
+                    <Box display="flex" alignItems="center" style={{ height: '38vh', marginBottom: '-5rem' }}>
                         <div style={{ width: '30vw' }}>
                             <Typography
                                 className={classes.white}
