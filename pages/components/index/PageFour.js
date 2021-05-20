@@ -62,12 +62,12 @@ export default function pageFour() {
                         <Image src={"/logodark.png"} width={50} height={50} color="primary"/>
                     </div>
                     <div style={{flexGrow: 1}}/>
-                    <Hidden only={['md', 'lg', 'xl']}>
+                    <Hidden only={['lg', 'xl']}>
                         <IconButton edge="start" color="primary" aria-label="menu">
                             <MenuIcon/>
                         </IconButton>
                     </Hidden>
-                    <Hidden smDown>
+                    <Hidden mdDown>
                         <Box display="flex">
                             <Link href="/">
                                 <a className={classes.root} style={{padding: '2rem 5rem 0 1rem'}}>Home</a>
@@ -95,10 +95,18 @@ export default function pageFour() {
             </AppBar>
             <section>
                 <Container style={{ height: '98vh' }}>
-                    <Box display="flex" justifyContent="center" alignItems="center" style={{ height: '90vh' }}>
-                        <iframe width='1053' height='680' src='https://my.matterport.com/show/?m=CikajWaJLMM'
-                                frameBorder='0' allowFullScreen allow='xr-spatial-tracking'></iframe>
-                    </Box>
+                    <Hidden only={['xs', 'sm', 'md', 'lg']}>
+                        <Box display="flex" justifyContent="center" alignItems="center" style={{ height: '85vh' }}>
+                            <iframe width='1053' height='680' src='https://my.matterport.com/show/?m=CikajWaJLMM'
+                                    frameBorder='0' allowFullScreen allow='xr-spatial-tracking'></iframe>
+                        </Box>
+                    </Hidden>
+                    <Hidden only={['xl']}>
+                        <Box display="flex" justifyContent="center" alignItems="center" style={{ paddingTop: '8vh' }}>
+                            <iframe width='853' height='480' src='https://my.matterport.com/show/?m=CikajWaJLMM'
+                                    frameBorder='0' allowFullScreen allow='xr-spatial-tracking'></iframe>
+                        </Box>
+                    </Hidden>
                 </Container>
             </section>
         </div>

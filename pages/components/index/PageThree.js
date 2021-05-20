@@ -31,12 +31,12 @@ const useStyles = makeStyles((theme) => ({
     descripText: {
         color: theme.palette.white.main,
         fontFamily: 'Work Sans',
-        fontSize: '1.2rem',
+        fontSize: '140%',
         fontStyle: 'normal',
         fontWeight: 400,
         lineHeight: '22px',
         letterSpacing: '0em',
-        padding: '1.8rem 0'
+        padding: '4.3% 0'
     },
     tours: {
         color: theme.palette.secondary.third,
@@ -80,12 +80,12 @@ export default function pageThree() {
                         <Image src={"/Logo.png"} width={50} height={50} />
                     </div>
                     <div style={{flexGrow: 1}}/>
-                    <Hidden only={['md', 'lg', 'xl']}>
+                    <Hidden only={['lg', 'xl']}>
                         <IconButton edge="start" color="inherit" aria-label="menu">
                             <MenuIcon/>
                         </IconButton>
                     </Hidden>
-                    <Hidden smDown>
+                    <Hidden mdDown>
                         <Box display="flex">
                             <Link href="/">
                                 <a className={classes.root} style={{padding: '2rem 5rem 0 1rem'}}>Home</a>
@@ -113,27 +113,29 @@ export default function pageThree() {
             </AppBar>
             <section>
                 <Container fixed>
-                    <Box display="flex" alignItems="center" style={{ height: '38vh', marginBottom: '-5rem' }}>
-                        <div style={{ width: '30vw' }}>
-                            <Typography
-                                className={classes.white}
-                                style={{
+                    <Grid container>
+                        <Grid item xs={12} sm={12} md={7} lg={7} xl={7}>
+                            <Box display="flex" alignItems="center" style={{ height: '38vh', marginBottom: '-5rem' }}>
+                                <Typography
+                                    className={classes.white}
+                                    style={{
 
-                                    fontSize: '48px',
-                                    fontStyle: 'normal',
-                                    fontWeight: 700,
-                                    lineHeight: '48px',
-                                    letterSpacing: '0em',
-                                    textAlign: 'left'
+                                        fontSize: '3rem',
+                                        fontStyle: 'normal',
+                                        fontWeight: 700,
+                                        lineHeight: '48px',
+                                        letterSpacing: '0em',
+                                        textAlign: 'left'
 
-                                }}>
-                                <span className={classes.lightBlue}>Capture</span> and
-                                <span className={classes.lightBlue}> share </span>
-                                your space
-                                with our services
-                            </Typography>
-                        </div>
-                    </Box>
+                                    }}>
+                                    <span className={classes.lightBlue}>Capture</span> and
+                                    <span className={classes.lightBlue}> share </span>
+                                    your space
+                                    with our services
+                                </Typography>
+                            </Box>
+                        </Grid>
+                    </Grid>
                     <Grid container justify="center" alignItems="center" spacing={3} style={{ paddingLeft: '4rem' }}>
                         <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
                             <div style={{ paddingLeft: '8.3rem' }}>

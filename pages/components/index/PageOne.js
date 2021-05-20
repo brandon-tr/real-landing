@@ -51,12 +51,12 @@ export default function pageOne(props) {
                         <Image src={"/Logo.png"} width={50} height={50} />
                     </div>
                     <div style={{flexGrow: 1}}/>
-                    <Hidden only={['md', 'lg', 'xl']}>
+                    <Hidden only={['lg', 'xl']}>
                         <IconButton edge="start" color="inherit" aria-label="menu">
                             <MenuIcon/>
                         </IconButton>
                     </Hidden>
-                    <Hidden smDown>
+                    <Hidden mdDown>
                         <Box display="flex">
                             <Link href="/">
                                 <a className={classes.root} style={{padding: '2rem 5rem 0 1rem'}}>Home</a>
@@ -75,7 +75,7 @@ export default function pageOne(props) {
                             </Link>
                             <Link href="/">
                                 <a className={classes.root} style={{padding: '2rem 5rem 0 1rem'}}> <Image src={"/dashboard.png"}
-                                                                                                width={25} height={25} alt="user icon"/>
+                                                                                                          width={25} height={25} alt="user icon"/>
                                 </a>
                             </Link>
                         </Box>
@@ -84,58 +84,128 @@ export default function pageOne(props) {
             </AppBar>
             <section>
                 <Container fixed>
-                    <Grid container style={{height: '80vh'}}>
-                        <Grid item xs={12} sm={12} md={8} lg={8} xl={8}>
-                            <Box display="flex" alignItems="center" justifyContent="center" flexDirection="column"
-                                 style={{height: '100%'}}>
-                                <Typography style={{ fontFamily: 'Blatant', fontSize: '7rem', fontWeight: 'bold', alignSelf: "flex-start" }} className={classes.white}>Waypoint</Typography>
-                                <Typography style={{ alignSelf: "flex-start" }} className={classes.subText}>Reimagining the way we view
-                                    spaces
+                    <Hidden lgDown>
+                        <Box display="flex" alignItems="center" justifyContent="center" flexDirection="column"
+                             style={{height: '80vh'}}>
+                            <Typography style={{ fontFamily: 'Blatant', fontSize: '7rem', fontWeight: 'bold', alignSelf: "flex-start" }} className={classes.white}>Waypoint</Typography>
+                            <Typography style={{ alignSelf: "flex-start" }} className={classes.subText}>Reimagining the way we view
+                                spaces
+                            </Typography>
+                            <Button
+                                onClick={props.setPageFour}
+                                variant="contained"
+                                style={{
+                                    height: '59px',
+                                    width: '300px',
+                                    borderRadius: '40px',
+                                    background: 'linear-gradient(180deg, #8ED8EF 0%, #BAE0C2 100%)',
+                                    alignSelf: "flex-start",
+                                    zIndex: 1
+                                }}
+                            >
+                                <Typography color="primary" style={{
+
+                                    fontFamily: 'Work Sans',
+                                    fontSize: '18px',
+                                    fontStyle: 'normal',
+                                    fontWeight: '700',
+                                    lineHeight: '29px',
+                                    letterSpacing: '0em',
+                                    textAlign: 'center',
+                                    textTransform: 'lowercase',
+
+                                }}>
+                                    <span style={{ textTransform: 'uppercase' }}>T</span>ake a tour
                                 </Typography>
-                                <Button
-                                    onClick={props.setPageFour}
-                                    variant="contained"
-                                        style={{
-                                            height: '59px',
-                                            width: '300px',
-                                            borderRadius: '40px',
-                                            background: 'linear-gradient(180deg, #8ED8EF 0%, #BAE0C2 100%)',
-                                            alignSelf: "flex-start",
-                                            zIndex: 1
-                                        }}
-                                >
-                                    <Typography color="primary" style={{
+                            </Button>
+                        </Box>
+                    </Hidden>
+                    <Hidden only={["xs", "sm", "md", "xl"]}>
+                        <Box display="flex" alignItems="center" justifyContent="center" flexDirection="column"
+                             style={{height: '80vh', paddingLeft: '10rem'}}>
+                            <Typography style={{ fontFamily: 'Blatant', fontSize: '7rem', fontWeight: 'bold', alignSelf: "flex-start" }} className={classes.white}>Waypoint</Typography>
+                            <Typography style={{ alignSelf: "flex-start" }} className={classes.subText}>Reimagining the way we view
+                                spaces
+                            </Typography>
+                            <Button
+                                onClick={props.setPageFour}
+                                variant="contained"
+                                style={{
+                                    height: '59px',
+                                    width: '300px',
+                                    borderRadius: '40px',
+                                    background: 'linear-gradient(180deg, #8ED8EF 0%, #BAE0C2 100%)',
+                                    alignSelf: "flex-start",
+                                    zIndex: 1
+                                }}
+                            >
+                                <Typography color="primary" style={{
 
-                                        fontFamily: 'Work Sans',
-                                        fontSize: '18px',
-                                        fontStyle: 'normal',
-                                        fontWeight: '700',
-                                        lineHeight: '29px',
-                                        letterSpacing: '0em',
-                                        textAlign: 'center',
-                                        textTransform: 'lowercase',
+                                    fontFamily: 'Work Sans',
+                                    fontSize: '18px',
+                                    fontStyle: 'normal',
+                                    fontWeight: '700',
+                                    lineHeight: '29px',
+                                    letterSpacing: '0em',
+                                    textAlign: 'center',
+                                    textTransform: 'lowercase',
 
-                                    }}>
-                                        <span style={{ textTransform: 'uppercase' }}>T</span>ake a tour
-                                    </Typography>
-                                </Button>
-                            </Box>
-                        </Grid>
-                    </Grid>
+                                }}>
+                                    <span style={{ textTransform: 'uppercase' }}>T</span>ake a tour
+                                </Typography>
+                            </Button>
+                        </Box>
+                    </Hidden>
+                    <Hidden lgUp>
+                        <Box display="flex" alignItems="center" justifyContent="center" flexDirection="column"
+                             style={{height: '80vh', width: '100vw'}}>
+                            <Typography style={{ fontFamily: 'Blatant', fontSize: '7rem', fontWeight: 'bold' }} className={classes.white}>Waypoint</Typography>
+                            <Typography className={classes.subText}>Reimagining the way we view
+                                spaces
+                            </Typography>
+                            <Button
+                                onClick={props.setPageFour}
+                                variant="contained"
+                                style={{
+                                    height: '59px',
+                                    width: '300px',
+                                    borderRadius: '40px',
+                                    background: 'linear-gradient(180deg, #8ED8EF 0%, #BAE0C2 100%)',
+                                    zIndex: 1
+                                }}
+                            >
+                                <Typography color="primary" style={{
+
+                                    fontFamily: 'Work Sans',
+                                    fontSize: '18px',
+                                    fontStyle: 'normal',
+                                    fontWeight: '700',
+                                    lineHeight: '29px',
+                                    letterSpacing: '0em',
+                                    textTransform: 'lowercase',
+
+                                }}>
+                                    <span style={{ textTransform: 'uppercase' }}>T</span>ake a tour
+                                </Typography>
+                            </Button>
+                        </Box>
+                    </Hidden>
                 </Container>
             </section>
-            <div style={{
-                position: 'absolute',
-                bottom: 0,
-                right: 0,
-                height: '90vh',
-                width: '98vw',
-                zIndex: 0,
-                WebkitTransform: 'translate(15%, 0)',
-                transform: 'translate(15%, 0)',
-            }}>
-                <Image src={"/remote.png"} layout="fill" alt="special 3d camera" />
-            </div>
+            <Hidden mdDown>
+                <div style={{
+                    position: 'absolute',
+                    bottom: 0,
+                    right: 0,
+                    height: '90vh',
+                    width: '98vw',
+                    zIndex: 0,
+                    WebkitTransform: 'translate(20%, 0)',
+                    transform: 'translate(20%, 0)',
+                }}>
+                    <Image src={"/remote.png"} layout="fill" alt="special 3d camera" />
+                </div>
+            </Hidden>
         </div>
     )
 }

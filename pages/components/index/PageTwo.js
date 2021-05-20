@@ -62,12 +62,12 @@ export default function pageTwo(props) {
                         <Image src={"/logodark.png"} width={50} height={50} color="primary"/>
                     </div>
                     <div style={{flexGrow: 1}}/>
-                    <Hidden only={['md', 'lg', 'xl']}>
+                    <Hidden only={['lg', 'xl']}>
                         <IconButton edge="start" color="primary" aria-label="menu">
                             <MenuIcon/>
                         </IconButton>
                     </Hidden>
-                    <Hidden smDown>
+                    <Hidden mdDown>
                         <Box display="flex">
                             <Link href="/">
                                 <a className={classes.root} style={{padding: '2rem 5rem 0 1rem'}}>Home</a>
@@ -97,8 +97,8 @@ export default function pageTwo(props) {
                 <Container style={{ height: '98vh' }}>
                     <Box display="flex">
                         <Grid container justify="center" alignItems="center" style={{ height: '98vh' }} spacing={10}>
-                            <Hidden smDown>
-                                <Grid item xs={12} sm={12} md={8} lg={8} xl={8} align="center" style={{ paddingLeft: '1.2rem' }}>
+                            <Hidden mdDown>
+                                <Grid item xs={12} sm={12} md={8} lg={5} xl={8} align="center" style={{ paddingLeft: '1.2rem' }}>
                                     <Image src="/3dscan.png" width={771} height={631} alt="3dscan" />
                                 </Grid>
                             </Hidden>
@@ -112,7 +112,7 @@ export default function pageTwo(props) {
                                         fontWeight: '400',
                                         lineHeight: '77px',
                                         letterSpacing: '0em',
-                                        paddingBottom: '2rem',
+                                        paddingBottom: '0.7vh',
 
                                     }} className={classes.aboutUsColor}>About us</Typography>
                                     <Typography style={{
@@ -124,7 +124,7 @@ export default function pageTwo(props) {
                                         lineHeight: '29px',
                                         letterSpacing: '0em',
                                         textAlign: 'left',
-                                        paddingBottom: '2rem',
+                                        paddingBottom: '0.7vh',
 
                                     }} className={classes.aboutUsDescription}>Waypoint is a 3D virtual touring company based on Guam.</Typography>
                                     <Grid container spacing={3} justify="center" alignItems="center">
@@ -146,7 +146,7 @@ export default function pageTwo(props) {
                                             }} className={classes.aboutUsSubtext}>Showcase your business or property by immersing your customers in our virtual tours!</Typography>
                                         </Grid>
                                     </Grid>
-                                    <div style={{ paddingBottom: '5rem' }} />
+                                    <div style={{ paddingBottom: '5vh' }} />
                                     <Hidden smDown>
                                         <Box display="flex" alignContent="flex-end" style={{ height: '30vh' }}>
                                             <Button
