@@ -5,6 +5,7 @@ import PageOne from './components/index/PageOne';
 import PageTwo from './components/index/PageTwo';
 import PageThree from './components/index/PageThree';
 import PageFour from './components/index/PageFour';
+import Menu from './components/Menu';
 import Image from 'next/image';
 import {makeStyles, Typography} from "@material-ui/core";
 
@@ -48,6 +49,7 @@ export default function Home() {
             </Head>
             <main>
                 <section>
+                    <Menu number={number} />
                     <ReactPageScroller
                         pageOnChange={handlePageChange}
                         onBeforePageScroll={handleBeforePageChange}

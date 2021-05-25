@@ -74,43 +74,6 @@ export default function pageThree() {
     const classes = useStyles();
     return (
         <div style={{ position: 'relative', height: '100vh', width: '100vw' }}>
-            <AppBar position="static" style={{background: 'transparent', boxShadow: 'none'}}>
-                <Toolbar>
-                    <div style={{padding: '2rem 5rem 0 5rem'}}>
-                        <Image src={"/Logo.png"} width={50} height={50} />
-                    </div>
-                    <div style={{flexGrow: 1}}/>
-                    <Hidden only={['lg', 'xl']}>
-                        <IconButton edge="start" color="inherit" aria-label="menu">
-                            <MenuIcon/>
-                        </IconButton>
-                    </Hidden>
-                    <Hidden mdDown>
-                        <Box display="flex">
-                            <Link href="/">
-                                <a className={classes.root} style={{padding: '2rem 5rem 0 1rem'}}>Home</a>
-                            </Link>
-                            <Link href="/">
-                                <a className={classes.root} style={{padding: '2rem 5rem 0 1rem'}}>Services</a>
-                            </Link>
-                            <Link href="/">
-                                <a className={classes.root} style={{padding: '2rem 5rem 0 1rem'}}>How it Works</a>
-                            </Link>
-                            <Link href="/">
-                                <a className={classes.root} style={{padding: '2rem 5rem 0 1rem'}}>Gallery</a>
-                            </Link>
-                            <Link href="/">
-                                <a className={classes.root} style={{padding: '2rem 5rem 0 1rem'}}>Contact Us</a>
-                            </Link>
-                            <Link href="/">
-                                <a className={classes.root} style={{padding: '2rem 5rem 0 1rem'}}> <Image src={"/dashboard.png"}
-                                                                                                          width={25} height={25} alt="user icon"/>
-                                </a>
-                            </Link>
-                        </Box>
-                    </Hidden>
-                </Toolbar>
-            </AppBar>
             <section>
                 <Container fixed>
                     <Grid container>
