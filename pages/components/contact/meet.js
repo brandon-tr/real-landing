@@ -9,7 +9,8 @@ const useStyles = makeStyles((theme) => ({
             marginTop: '40%'
         },
         [theme.breakpoints.up('xl')]: {
-            padding: '100px'
+            padding: '80px 0 80px 0',
+            width: '92%'
         },
     },
     textLight: {
@@ -48,6 +49,7 @@ export default function Meet() {
                     <Grid item xs={12} sm={12} md={6} lg={5} xl={6}>
                         <div className={classes.resolutionOuter} style={{
                             background: 'linear-gradient(180deg, rgba(142, 216, 239, 0.5) 0%, rgba(186, 224, 194, 0.5) 100%)',
+                            borderRadius: '20px'
                         }}>
                             <Box display="flex" flexDirection="column" alignItems="center" justifyContent="center">
                                 <Image src="/jolli.png" width={450} height={450} />
@@ -69,6 +71,7 @@ export default function Meet() {
                     <Grid item xs={12} sm={12} md={6} lg={5} xl={6}>
                         <div className={classes.resolutionOuter} style={{
                             background: 'linear-gradient(180deg, rgba(142, 216, 239, 0.5) 0%, rgba(186, 224, 194, 0.5) 100%)',
+                            borderRadius: '20px'
                         }}>
                             <Box display="flex" flexDirection="column" alignItems="center" justifyContent="center">
                                 <Image src="/jay.png" width={450} height={450} />

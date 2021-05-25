@@ -7,6 +7,9 @@ const useStyles = makeStyles((theme) => ({
             marginTop: '20%'
         },
     },
+    textLight: {
+        color: theme.palette.primary.light
+    }
 }));
 
 
@@ -20,6 +23,7 @@ export default function ContactIndex() {
                         <Typography
                             color="primary"
                             style={{
+                                fontFamily: 'Blatant',
                                 fontSize: '64px',
                                 fontStyle: 'normal',
                                 fontWeight: 400,
@@ -27,7 +31,8 @@ export default function ContactIndex() {
                                 letterSpacing: '0em',
                                 padding: '20px',
                                 textAlign: 'left',
-                                width: '100%'
+                                width: '100%',
+                                textShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)'
                             }}>
                             Contact Us
                         </Typography>
@@ -37,7 +42,8 @@ export default function ContactIndex() {
                             fontWeight: 400,
                             lineHeight: '38.4px',
                             letterSpacing: '0em',
-                            padding: '20px 20px 25px 20px'
+                            padding: '20px 20px 25px 20px',
+                            textShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)'
                         }}>
                             Requesting a quote? Want to get your property scanned? Fill out our form and we will get back to you as soon as possible!
                         </Typography>
@@ -49,7 +55,8 @@ export default function ContactIndex() {
                             lineHeight: '38.4px',
                             letterSpacing: '0em',
                             padding: '20px 0 0 20px',
-                            width: '100%'
+                            width: '100%',
+                            textShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)'
                         }}>
                             Email: waypointgu@gmail.com
                         </Typography>
@@ -60,7 +67,8 @@ export default function ContactIndex() {
                             lineHeight: '38.4px',
                             letterSpacing: '0em',
                             paddingLeft: '20px',
-                            width: '100%'
+                            width: '100%',
+                            textShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)'
                         }}>
                             Phone Number: 671-929-6369
                         </Typography>
@@ -71,7 +79,8 @@ export default function ContactIndex() {
                             lineHeight: '38.4px',
                             letterSpacing: '0em',
                             paddingLeft: '20px',
-                            width: '100%'
+                            width: '100%',
+                            textShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)'
                         }}>
                             Our Location: TBD
                         </Typography>
@@ -84,7 +93,8 @@ export default function ContactIndex() {
                         minHeight: '50vh',
                         borderRadius: '20px'
                     }}>
-                        <Typography style={{
+                        <Typography className={classes.textLight} style={{
+                            fontFamily: 'Blatant',
                             fontSize: '36px',
                             fontStyle: 'normal',
                             fontWeight: 400,
@@ -96,20 +106,20 @@ export default function ContactIndex() {
                             Send us a message
                         </Typography>
                         <form style={{ width: '100%' }}>
-                            <Grid container justify="center" alignItems="center">
-                                <Grid item xs={12} sm={12} md={12} lg={12} xl={12} style={{ padding: '20px 50px 10px 50px' }}>
-                                    <TextField id="outlined-basic" label="Name" variant="outlined" style={{width: '90%', background: 'white'}} />
+                            <Grid container justify="center" alignItems="center" style={{ width: '100%' }}>
+                                <Grid item xs={9} style={{ padding: '20px 0' }}>
+                                    <TextField id="outlined-basic" label="Name" variant="outlined" style={{width: '100%', background: 'white'}} />
                                 </Grid>
-                                <Grid item xs={12} sm={12} md={12} lg={12} xl={12} style={{ padding: '20px 50px 10px 50px' }}>
-                                    <TextField id="outlined-basic" label="Email" variant="outlined" style={{ width: '90%', background: 'white'}}/>
+                                <Grid item xs={9} style={{ padding: '20px 0' }}>
+                                    <TextField id="outlined-basic" label="Email" variant="outlined" style={{ width: '100%', background: 'white'}}/>
                                 </Grid>
-                                <Grid item xs={12} sm={12} md={12} lg={12} xl={12} style={{ padding: '20px 50px 10px 50px' }}>
-                                    <TextField id="outlined-basic" multiline rows={10} label="Message" variant="outlined" style={{width: '90%', background: 'white'}}/>
+                                <Grid item xs={9} style={{ padding: '20px 0' }}>
+                                    <TextField id="outlined-basic" multiline rows={10} label="Message" variant="outlined" style={{width: '100%', background: 'white'}}/>
                                 </Grid>
-                                <Grid item xs={12} sm={12} md={12} lg={12} xl={12} style={{ padding: '20px 50px 10px 50px' }}>
+                                <Grid item xs={9} style={{ padding: '20px 0' }}>
                                     <Button variant="contained" color="primary" style={{
                                         height: '65px',
-                                        width: '92%',
+                                        width: '100%',
                                         borderRadius: '15px'
                                     }}>
                                         <Typography style={{
